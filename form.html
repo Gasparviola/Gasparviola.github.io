@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/normalize.css">
+    <link rel="stylesheet" href="./Css/estilos.css">
+    <title>GYM - Contacto</title>
+</head>
+<body>
+    
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Fenix Centro Deportivo</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                
+                <li class="nav__items">
+                    <a href="aboutUs.html" class="nav__links">Sobre nosotros</a>
+                </li>
+
+                <li class="nav__items">
+                    <a href="form.html" class="nav__links">Contactanos</a>
+                </li>
+            
+                <img src="./Imagenes/exit-close.svg" alt="cerrar-salir" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./Imagenes/menu.svg" alt="abrirMenu" class="nav__img">
+            </div>
+        </nav>  
+
+        <section class="hero__container container">
+            <h1 class="hero__title">CAMBIA TU ESTILO DE VIDA</h1>
+            <p class="hero__paragraph">Contamos con entrenamientos personalizados y asesorías nutricionales. ¿Que estas esperando para comenzar?</p>
+            <a href="form.html" class="cta">¡Prueba tu primera clase, gratis!</a>
+        </section>
+    </header>
+
+    <main>
+        <div class="container_form">
+
+            <div class="form" id="contact-form">
+                <h1 class="h1_contact">¡Contactanos para reservar tu primera clase!</h1>
+                    <form >
+                    <div class="half left">
+                        <input type="text" id="input-name" placeholder="Nombre">
+                        <input type="text" id="input-email" placeholder="Email">
+                        <input type="number" id="input-subject" placeholder="Peso en Kg">
+                    </div>
+                    <div class="half right cf">
+                        <textarea name="message" type="text" id="input-message" placeholder="Mensaje"></textarea>
+                    </div>
+                    <input type="reset" value="Limpiar Formulario">  
+                    <input type="submit" value="Enviar" id="input-submit">
+                    </form>
+            </div>
+    
+            
+        <div id="error-list">
+    
+        </div>
+        </div>
+    </main>
+
+    <script src="Js/formulario.js"></script>
+
+
+    <!--Footer-->
+    <div>
+        <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Fenix Centro Deportivo</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Sobre nosotros</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contactanos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--Cambiar el form-->
+            <!-- <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form> -->
+            <!---->
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./Imagenes/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./Imagenes/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./Imagenes/instagram.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Fenix Centro Deportivo</h3>
+        </section>
+    </footer>
+    </div>
+
+
+</body>
+</html>
