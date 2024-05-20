@@ -30,13 +30,13 @@ body{
 
 .hero::before{
     content: "";
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url(../Imagenes/victor-freitas-nlZTjUZX2qo-unsplash.jpg);
-    background-size: cover;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url(../Imagenes/samuel-girven-fqMu99l8sqo-unsplash.jpg);
+    background-size:cover;
     z-index: -1;
 }
 /*--------------------------------------------------------------------------------------------------------------*/
@@ -134,6 +134,14 @@ body{
     color: var(--color-title);
     font-size: 2em;
     margin-bottom: 25px;
+}
+
+.subtitleIMG{
+    color: var(--color-title);
+    font-size: 2em;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .about__paragraph{
@@ -260,7 +268,7 @@ body{
 /* Carrusel Imagenes */
 
 .carruselImg{
-    background-color: #fff;
+    background-color:#fff;
 }
 
 .carrusel__container{
