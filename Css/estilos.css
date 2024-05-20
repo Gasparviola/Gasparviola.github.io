@@ -35,7 +35,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url(../Imagenes/samuel-girven-fqMu99l8sqo-unsplash.jpg);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url(../Imagenes/sam-moghadam-khamseh-Z4Q9KHw9ofE-unsplash.jpg);
     background-size:cover;
     z-index: -1;
 }
@@ -136,7 +136,7 @@ body{
     margin-bottom: 25px;
 }
 
-.subtitleIMG{
+.subIMG{
     color: var(--color-title);
     font-size: 2em;
     margin-bottom: 25px;
