@@ -1,6 +1,8 @@
 const form = document.getElementById('contact-form')
 const errorContainer = document.getElementById('error-list')
 
+
+
 function mostrarMensaje(mensaje) {
 const errorElement = document.createElement('p')
 errorElement.textContent = mensaje;
@@ -24,6 +26,9 @@ if(nombre.trim() === '' && email.trim() === '' && peso.trim() === '' && mensaje.
 
 if (nombre.trim() === '') {
     mostrarMensaje('Por favor, ingrese su nombre.')
+    return
+}else if (!validarNombre(nombre)) {
+    mostrarMensaje('Por favor, ingrese un nombre válido.')
     return
 }
 
@@ -52,6 +57,11 @@ mostrarMensaje(
 function validarEmail(email) {
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 return emailRegex.test(email)
+}
+
+function validarNombre(nombre) {
+    const regExLetra = /^[a-z A-Z]{0,20}$/
+    return regExLetra.test(nombre)
 }
 
 form.addEventListener('submit', validarFormulario)
